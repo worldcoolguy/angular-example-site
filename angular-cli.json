@@ -17,7 +17,9 @@
         "tsconfig": "tsconfig.json",
         "prefix": "app",
         "styles": [
-            "styles.css"
+            "styles.css",
+            "app/common/side-menu.css",
+            "../node_modules/highlightjs/styles/default.css"
         ],
         "scripts": [],
         "environments": {
