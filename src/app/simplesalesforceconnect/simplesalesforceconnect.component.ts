@@ -13,7 +13,7 @@ import {PackageDataService} from '../common/packageDataService';
 @Injectable()
 export class SimpleSalesforceConnectComponent implements OnInit {
     pData: any[];
-    URL_SimpleSalesforceConnect = './assets/simplesalesforceconnect/simplesalesforceconnect.json';
+    URL_SimpleSalesforceConnect = './assets/simplesalesforceconnect.json';
     
     constructor(private _packageDataService: PackageDataService) { }
 
