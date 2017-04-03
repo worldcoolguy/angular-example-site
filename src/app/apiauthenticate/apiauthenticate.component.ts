@@ -13,7 +13,7 @@ import {PackageDataService} from '../common/packageDataService';
 @Injectable()
 export class ApiAuthenticateComponent implements OnInit {
     pData: any[];
-    URL_ApiAuthenticate = './app/apiauthenticate/apiauthenticate.json';
+    URL_ApiAuthenticate = './assets/apiauthenticate/apiauthenticate.json';
     
     constructor(private _packageDataService: PackageDataService) { }
 

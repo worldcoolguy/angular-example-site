@@ -13,7 +13,7 @@ import {PackageDataService} from '../common/packageDataService';
 @Injectable()
 export class SimpleBlackboardConnectComponent implements OnInit {
     pData: any[];
-    URL_SimpleBlackboardConnect = './app/simpleblackboardconnect/simpleblackboardconnect.json';
+    URL_SimpleBlackboardConnect = './assets/simpleblackboardconnect/simpleblackboardconnect.json';
     
     constructor(private _packageDataService: PackageDataService) { }
 
