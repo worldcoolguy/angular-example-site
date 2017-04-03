@@ -12,7 +12,7 @@ import {ExtensionMethodComponent} from './extensionMethod.component'
 
 export class PrintClassInstanceComponent implements OnInit {
     packageData: any[];
-    URL_PrintClassInstanceData = './app/printclassinstance/printclassinstance.json';
+    URL_PrintClassInstanceData = './assets/printclassinstance.json';
     
     constructor(private _packageDataService: PackageDataService) { }
 
