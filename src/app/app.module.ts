@@ -14,6 +14,7 @@ import {ExtensionMethodComponent} from './printclassinstance/extensionMethod.com
 import {SimpleSalesforceConnectComponent} from './simplesalesforceconnect/simplesalesforceconnect.component';
 import {SimpleBlackboardConnectComponent} from './simpleblackboardconnect/simpleblackboardconnect.component';
 import {ApiAuthenticateComponent} from './apiauthenticate/apiauthenticate.component';
+import {AssemblyExtensionComponent} from './assemblyextension/assemblyextension.component';
 
 
 import { Routing } from './app.routes';
@@ -26,7 +27,8 @@ import { Routing } from './app.routes';
     ExtensionMethodSampleComponent,
     SimpleSalesforceConnectComponent,
     SimpleBlackboardConnectComponent,
-    ApiAuthenticateComponent
+    ApiAuthenticateComponent,
+    AssemblyExtensionComponent
   ],
   bootstrap:    [ AppComponent ],
   providers:[PackageDataService]
