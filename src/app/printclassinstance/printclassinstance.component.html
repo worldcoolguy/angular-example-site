@@ -1,6 +1,6 @@
 <div id="main">
     <div class="header">
-        <h1>Object Extensions</h1>
+        <h1>Object and Type Extensions</h1>
         <p>
             <a href="https://www.nuget.org/packages/PrintClassInstance/">Nuget</a>
             <a href="https://bitbucket.org/igress/printclassinstance" style="padding-left: 20px;">Source Code</a>
@@ -8,15 +8,7 @@
     </div>
     <div class="content">
         <h2 class="content-subhead">ObjectExtensions (supports .NET Core, .NET 4.6.) can be used to:</h2>
-        <ul class="fa-ul">
-            <li><a href="#" class="pure-menu-link list-link">1. Deep compare two objects and save or view the results</a></li>
-            <li><a href="#" class="pure-menu-link list-link">2. Get list of members names</a></li>
-            <li><a href="#" class="pure-menu-link list-link">3. Get member value</a></li>
-            <li><a href="#" class="pure-menu-link list-link">4. Set member value including private members and on class hierarchies</a></li>
-            <li><a href="#" class="pure-menu-link list-link">5. Get list of member names that are null</a></li>
-            <li><a href="#" class="pure-menu-link list-link">6. Deep Clone</a></li>
-            <li><a href="#" class="pure-menu-link list-link">7. Save or view object graph of an object's instance</a></li>
-        </ul>
+
         <div *ngFor="let extMethod of packageData">
             <extensionMethod [extMethod]="extMethod"></extensionMethod>
         </div>
