@@ -6,7 +6,6 @@ import {SimpleSalesforceConnectComponent} from './simplesalesforceconnect/simple
 import {SimpleBlackboardConnectComponent} from './simpleblackboardconnect/simpleblackboardconnect.component';
 import {ApiAuthenticateComponent} from './apiauthenticate/apiauthenticate.component';
 import {AssemblyExtensionComponent} from './assemblyextension/assemblyextension.component';
-import {MenuComponent} from './menu/menu.component';
 import {HomeComponent} from './home/home.component';
 
 export const routes: Routes = [
@@ -15,7 +14,6 @@ export const routes: Routes = [
   { path: 'simpleblackboardconnect', component: SimpleBlackboardConnectComponent },
   { path: 'apiauthenticate', component: ApiAuthenticateComponent },
   { path: 'assemblyextension', component: AssemblyExtensionComponent },
-  { path: 'menu', component: MenuComponent },
   { path: 'home', component: HomeComponent }
 ];
 
