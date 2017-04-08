@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import 'rxjs/Rx'; // get everything from Rx
 import { AppComponent }  from './app.component';
 import {PackageDataService} from './common/packageDataService';
+
 import {ExtensionMethodSampleComponent} from './common/extensionMethodSample.component';
 
 import {PrintClassInstanceComponent} from './printclassinstance/printclassinstance.component';
@@ -15,7 +16,7 @@ import {SimpleSalesforceConnectComponent} from './simplesalesforceconnect/simple
 import {SimpleBlackboardConnectComponent} from './simpleblackboardconnect/simpleblackboardconnect.component';
 import {ApiAuthenticateComponent} from './apiauthenticate/apiauthenticate.component';
 import {AssemblyExtensionComponent} from './assemblyextension/assemblyextension.component';
-
+import {MenuComponent} from './menu/menu.component';
 
 import { Routing } from './app.routes';
 
@@ -28,7 +29,8 @@ import { Routing } from './app.routes';
     SimpleSalesforceConnectComponent,
     SimpleBlackboardConnectComponent,
     ApiAuthenticateComponent,
-    AssemblyExtensionComponent
+    AssemblyExtensionComponent,
+    MenuComponent
   ],
   bootstrap:    [ AppComponent ],
   providers:[PackageDataService]

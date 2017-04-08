@@ -6,13 +6,15 @@ import {SimpleSalesforceConnectComponent} from './simplesalesforceconnect/simple
 import {SimpleBlackboardConnectComponent} from './simpleblackboardconnect/simpleblackboardconnect.component';
 import {ApiAuthenticateComponent} from './apiauthenticate/apiauthenticate.component';
 import {AssemblyExtensionComponent} from './assemblyextension/assemblyextension.component';
+import {MenuComponent} from './menu/menu.component';
 
 export const routes: Routes = [
   { path: 'printclassinstance', component: PrintClassInstanceComponent },
   { path: 'simplesalesforceconnect', component: SimpleSalesforceConnectComponent },
   { path: 'simpleblackboardconnect', component: SimpleBlackboardConnectComponent },
   { path: 'apiauthenticate', component: ApiAuthenticateComponent },
-  { path: 'assemblyextension', component: AssemblyExtensionComponent }
+  { path: 'assemblyextension', component: AssemblyExtensionComponent },
+  { path: 'menu', component: MenuComponent }
 ];
 
 export const Routing: ModuleWithProviders = RouterModule.forRoot(routes);
