@@ -17,6 +17,7 @@ import {SimpleBlackboardConnectComponent} from './simpleblackboardconnect/simple
 import {ApiAuthenticateComponent} from './apiauthenticate/apiauthenticate.component';
 import {AssemblyExtensionComponent} from './assemblyextension/assemblyextension.component';
 import {MenuComponent} from './menu/menu.component';
+import {HomeComponent} from './home/home.component';
 
 import { Routing } from './app.routes';
 
@@ -30,7 +31,8 @@ import { Routing } from './app.routes';
     SimpleBlackboardConnectComponent,
     ApiAuthenticateComponent,
     AssemblyExtensionComponent,
-    MenuComponent
+    MenuComponent,
+    HomeComponent
   ],
   bootstrap:    [ AppComponent ],
   providers:[PackageDataService]

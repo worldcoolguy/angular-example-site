@@ -35,7 +35,7 @@ This is the parent `<div>` that contains the menu and the content area.
 
 #layout.active #menu {
     left: 150px;
-    width: 200px;
+    width: 150px;
 }
 
 #layout.active .menu-link {
@@ -77,7 +77,7 @@ The content `<div>` is where all your content goes.
 }
 
 .content-subhead {
-    margin: 0px 0 0px 0;
+    margin: 50px 0 20px 0;
     font-weight: 300;
     color: #888;
 }
@@ -91,7 +91,7 @@ appears on the left side of the page.
 #menu {
     margin-left: -150px;
     /* "#menu" width */
-    width: 220px;
+    width: 150px;
     position: fixed;
     top: 0;
     left: 0;
@@ -236,27 +236,13 @@ small screens.
     margin-top: 0.6em;
 }
 
-.extensionBlock {
-    font-size: small;
-}
 
-.extensionMethod {
-    color: black;
-}
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
 
-.extensionMethodName {
-    text-decoration: underline;
-    font-size: large;
-}
 
-.extensionMethodSample {
-    padding: 10px;
-}
-
-.codeFont {
-    font-size: 12px;
-    line-height: 1.3em;
-}
+/*
+Hides the menu at `48em`, but modify this based on your app's needs.
+*/
 
 @media (min-width: 48em) {
     .header,
@@ -265,7 +251,7 @@ small screens.
         padding-right: 2em;
     }
     #layout {
-        padding-left: 220px;
+        padding-left: 150px;
         /* left col width "#menu" */
         left: 0;
     }

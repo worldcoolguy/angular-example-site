@@ -8,11 +8,14 @@ import { Injectable } from '@angular/core';
 })
 
 export class MenuComponent implements OnInit {
-    name :any;
-    
+    clickClass:any;
+    testBind:any;
     constructor() { }
-
     ngOnInit() {
-        this.name='test';
+        this.clickClass='menu-link';
+    }
+
+    menuLinkClick(){
+        this.clickClass='menu-link active';
     }
 }

@@ -2,6 +2,7 @@
     <div class="header">
         <h1>AssemblyExtensions</h1>
         <p>
+            <a href="home"><i class="fa fa-home" aria-hidden="true"  style="padding-right: 20px;"></i></a>
             <a href="https://www.nuget.org/packages/AssemblyExtensions">Nuget</a>
             <a href="https://bitbucket.org/igress/assemblyextensions" style="padding-left: 20px;">Source Code</a>
         </p>
@@ -9,7 +10,6 @@
     <div class="content">
         <div *ngFor="let package of pData">
             {{package.packageDescription}}
-            <p></p>
             <div *ngFor="let data of package.packageData">
                 <h2 class="content-subhead extensionMethod">
                     <span class="extensionMethodName">{{data.methodName}}</span>

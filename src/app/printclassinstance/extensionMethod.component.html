@@ -1,13 +1,12 @@
-<div>
-    <h2 class="content-subhead extensionMethod">
-        <i class="fa fa-hand-o-right fa-1" aria-hidden="true"></i>
-        <span class="extensionMethodName">{{extMethod.methodName}}</span>
-    </h2>
-    <div class="extensionBlock">
-        {{extMethod.description}}
-    </div>
-    <div *ngFor="let s of extMethod.samples">
-        <extensionMethodSample [methodSample]="s"></extensionMethodSample>
+<div class="ui card">
+    <div class="uicontent">
+        <div class="uiheader">{{extMethod.methodName}}</div>
+        <div class="uimeta">
+            {{extMethod.description}}
+        </div>
+        <div class="uidescription" *ngFor="let s of extMethod.samples">
+            <extensionMethodSample [methodSample]="s"></extensionMethodSample>
+        </div>
     </div>
 </div>
 <br/>
