@@ -237,7 +237,6 @@ small screens.
 }
 
 .extensionBlock {
-    padding-left: 25px;
     font-size: small;
 }
 
@@ -250,22 +249,14 @@ small screens.
     font-size: large;
 }
 
-.codePre {
-    padding: 0px;
+.extensionMethodSample {
+    padding: 10px;
 }
 
 .codeFont {
     font-size: 12px;
     line-height: 1.3em;
 }
-
-
-/* -- Responsive Styles (Media Queries) ------------------------------------- */
-
-
-/*
-Hides the menu at `48em`, but modify this based on your app's needs.
-*/
 
 @media (min-width: 48em) {
     .header,

@@ -8,12 +8,11 @@
     <div class="content">
         <div *ngFor="let package of pData">
             {{package.packageDescription}}
-
+            <p></p>
             <div *ngFor="let data of package.packageData">
                 <h2 class="content-subhead extensionMethod">
                     <span class="extensionMethodName">{{data.methodName}}</span>
                 </h2>
-                <br/>
                 <div *ngFor="let sample of data.samples">
                     <extensionMethodSample [methodSample]="sample"></extensionMethodSample>
                 </div>
