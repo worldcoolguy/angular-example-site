@@ -1,7 +1,11 @@
-<!--<div>
-    <app-menu></app-menu>
-</div>-->
+<div id="layout" class="{{layoutClass.cssClass}}">
 
-<div id="main">
-    <router-outlet></router-outlet>
+    <div>
+        <app-menu [layoutClass]="layoutClass"></app-menu>
+    </div>
+
+    <div id="main" class="content">
+        <router-outlet></router-outlet>
+    </div>
+
 </div>

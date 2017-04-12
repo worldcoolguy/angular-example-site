@@ -1,17 +1,26 @@
-<a href="#menu" id="menuLink" class="{{clickClass}}">
+<a id="menuLink" class="{{clickClass}}" (click)="menuLinkClick()">
     <!-- Hamburger icon -->
-    <span>{{name}}</span>
+    <span></span>
 </a>
 <div id="menu">
     <div class="pure-menu">
-        <span class="pure-menu-heading">NuGet</span>
-
+        <a [routerLink]="['/home']" class="pure-menu-heading"><i class="fa fa-home" aria-hidden="true"  style="padding-right: 20px;"></i>NuGet</a>
         <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="printclassinstance" class="pure-menu-link">ObjectExtensions</a></li>
-            <li class="pure-menu-item"><a href="simpleblackboardconnect" class="pure-menu-link">SimpleSalesforceConnect</a></li>
-            <li class="pure-menu-item"><a href="apiauthenticate" class="pure-menu-link">ApiAuthenticate</a></li>
-            <li class="pure-menu-item"><a href="simpleblackboardconnect" class="pure-menu-link">SimpleBlackboardConnect</a></li>
-            <li class="pure-menu-item"><a href="assemblyextension" class="pure-menu-link">AssemblyExtensions </a></li>
+            <li class="pure-menu-item" routerLinkActive="active">
+                <a [routerLink]="['/printclassinstance']" class="pure-menu-link">ObjectExtensions</a>
+            </li>
+            <li class="pure-menu-item">
+                <a [routerLink]="['/simplesalesforceconnect']" class="pure-menu-link">SimpleSalesforceConnect</a>
+            </li>
+            <li class="pure-menu-item">
+                <a [routerLink]="['/apiauthenticate']" class="pure-menu-link">ApiAuthenticate</a>
+            </li>
+            <li class="pure-menu-item">
+                <a [routerLink]="['/simpleblackboardconnect']" class="pure-menu-link">SimpleBlackboardConnect</a>
+            </li>
+            <li class="pure-menu-item">
+                <a [routerLink]="['/assemblyextension']" class="pure-menu-link">AssemblyExtensions </a>
+            </li>
         </ul>
     </div>
 </div>

@@ -4,12 +4,12 @@
     </p>
 </aside>
 
-<div style="padding-left: 20px;" class="ui raised cards">
+<div style="padding-left: 20px;" class="ui raised link cards">
 
     <div class="card thumbCardSize">
 
         <div class="uicontent">
-            <a class="uiheader" href="printclassinstance">
+            <a class="uiheader" [routerLink]="['/printclassinstance']">
                 ObjectExtensions
             </a>
             <div class="uimeta">
@@ -27,7 +27,7 @@
         <div class="image">
         </div>
         <div class="uicontent">
-            <a class="uiheader" href="assemblyextension">Assembly Extensions</a>
+            <a class="uiheader" [routerLink]="['/assemblyextension']">Assembly Extensions</a>
             <div class="uimeta">
                 Get metadata for an assembly.
             </div>
@@ -43,7 +43,7 @@
         <div class="image">
         </div>
         <div class="uicontent">
-            <a class="uiheader" href="simplesalesforceconnect">SimpleSalesforceConnect</a>
+            <a class="uiheader" [routerLink]="['/simplesalesforceconnect']">SimpleSalesforceConnect</a>
             <div class="uimeta">
                 Connect to Salesforce,download logs,upload logs to S3.
             </div>
@@ -59,7 +59,7 @@
         <div class="image">
         </div>
         <div class="uicontent">
-            <a class="uiheader" href="simpleblackboardconnect">SimpleBlackboardConnect</a>
+            <a class="uiheader" [routerLink]="['/simpleblackboardconnect']">SimpleBlackboardConnect</a>
             <div class="uimeta">
                 Connect to BlackBoard and get access token.
             </div>
@@ -75,7 +75,7 @@
         <div class="image">
         </div>
         <div class="uicontent">
-            <a class="uiheader" href="apiauthenticate">ApiAuthenticate</a>
+            <a class="uiheader" [routerLink]="['/apiauthenticate']">ApiAuthenticate</a>
             <div class="uimeta">
                 HttpClient wrapper. Connect to Salesforce, Blackboard and Aws.
             </div>

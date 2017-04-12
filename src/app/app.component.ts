@@ -9,6 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class AppComponent implements OnInit {
   name = 'Angular';
+  layoutClass={cssClass:''};
   ngOnInit(): void {
   }
 }
