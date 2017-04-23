@@ -32,3 +32,9 @@ aside {
     border-radius: 3px;
     color: #fff;
 }
+
+.uilink {
+    margin: 0;
+    font-size: 0.8em;
+    color: #4183c4;
+}

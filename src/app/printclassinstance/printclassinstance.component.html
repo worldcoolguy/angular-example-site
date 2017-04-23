@@ -11,6 +11,7 @@
     <div class="content">
         ObjectExtensions (supports .NET Core, .NET 4.6.) can be used to:
         <p></p>
+        <extensionsList [extensionsList]="methodNames"></extensionsList>
         <div *ngFor="let extMethod of packageData">
             <extensionMethod [extMethod]="extMethod"></extensionMethod>
         </div>

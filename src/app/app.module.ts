@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule }    from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
+
 import 'rxjs/Rx'; // get everything from Rx
 import { AppComponent }  from './app.component';
 import {PackageDataService} from './common/packageDataService';
@@ -18,11 +20,16 @@ import {ApiAuthenticateComponent} from './apiauthenticate/apiauthenticate.compon
 import {AssemblyExtensionComponent} from './assemblyextension/assemblyextension.component';
 import {HomeComponent} from './home/home.component';
 import {MenuComponent} from './menu/menu.component';
+import {ExtensionsListComponent} from './common/extensionsList.component';
 
 import { Routing } from './app.routes';
 
 @NgModule({
-  imports:      [ BrowserModule,HttpModule,Routing],
+  imports:      [ BrowserModule,
+    HttpModule,
+    Routing,
+    Ng2PageScrollModule.forRoot()
+  ],
   declarations: [ AppComponent,
     PrintClassInstanceComponent,
     ExtensionMethodComponent,
@@ -32,7 +39,8 @@ import { Routing } from './app.routes';
     ApiAuthenticateComponent,
     AssemblyExtensionComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    ExtensionsListComponent
   ],
   bootstrap:    [ AppComponent ],
   providers:[PackageDataService]
