@@ -2,7 +2,7 @@
     <div>
         <app-menu [layoutClass]="layoutClass"></app-menu>
     </div>
-    <div id="main" class="content">
+    <div id="main" class="content" (click)="mainContentClick()">
         <router-outlet></router-outlet>
     </div>
 </div>
