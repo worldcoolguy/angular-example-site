@@ -1,6 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule }    from '@angular/http';
+import { JsonpModule }    from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
@@ -9,6 +10,7 @@ import 'rxjs/Rx'; // get everything from Rx
 import { AppComponent }  from './app.component';
 import {PackageDataService} from './common/packageDataService';
 import {MenuHelper} from './common/menuHelper';
+import {NugetService} from './nugetstats/nugetService';
 
 import {ExtensionMethodSampleComponent} from './common/extensionMethodSample.component';
 
@@ -22,12 +24,14 @@ import {AssemblyExtensionComponent} from './assemblyextension/assemblyextension.
 import {HomeComponent} from './home/home.component';
 import {MenuComponent} from './menu/menu.component';
 import {ExtensionsListComponent} from './common/extensionsList.component';
+import {NugetStatsComponent} from './nugetstats/nugetstats.component';
 
 import { Routing } from './app.routes';
 
 @NgModule({
   imports:      [ BrowserModule,
     HttpModule,
+    JsonpModule,
     Routing,
     Ng2PageScrollModule.forRoot()
   ],
@@ -41,9 +45,10 @@ import { Routing } from './app.routes';
     AssemblyExtensionComponent,
     HomeComponent,
     MenuComponent,
-    ExtensionsListComponent
+    ExtensionsListComponent,
+    NugetStatsComponent
   ],
   bootstrap:    [ AppComponent ],
-  providers:[PackageDataService,MenuHelper]
+  providers:[PackageDataService,MenuHelper,NugetService]
 })
 export class AppModule { }
