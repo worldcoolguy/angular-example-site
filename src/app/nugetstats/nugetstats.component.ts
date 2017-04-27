@@ -4,6 +4,8 @@ import { Injectable } from '@angular/core';
 import { NugetService } from './nugetService';
 import { NugetPackageMeta } from '../models/nugetpackagemeta'
 
+var nugetPack=require('nuget.getstats');
+
 @Component({
     selector: 'app-nugetstats',
     templateUrl: './nugetstats.component.html'
@@ -11,15 +13,24 @@ import { NugetPackageMeta } from '../models/nugetpackagemeta'
 
 export class NugetStatsComponent implements OnInit   {
     @Input() packageId: string;
-    packageInfo:NugetPackageMeta;
+    packageInfo:any;
  
     constructor(private _nugetService:NugetService) {
         this.packageInfo=new NugetPackageMeta();
     }
 
     ngOnInit() {      
-        this._nugetService
-         .getPackageDetailsFromNuget(this.packageId)
-         .then(data => { this.packageInfo= data; });
+        nugetPack.GetNugetPackageStats(this.packageId).then(            
+            (data:any)=>{
+            debugger;
+            this.packageInfo={Version:1,TotalDownloads:10};  
+        }).
+        catch(function(err:any){
+            console.log(err);
+        });
+
+        // this._nugetService
+        //  .getPackageDetailsFromNuget(this.packageId)
+        //  .then(data => { this.packageInfo= data; });
     }
 }

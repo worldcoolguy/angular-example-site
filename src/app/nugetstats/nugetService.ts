@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response,Jsonp,Headers,URLSearchParams  } from '@angular/http';
-import {NugetPackageMeta} from '../models/nugetpackagemeta'
+import {NugetPackageMeta} from '../models/nugetpackagemeta' 
+var nugetPack=require('nuget.getstats');
 
 @Injectable()
 export class NugetService{
@@ -9,6 +10,10 @@ export class NugetService{
     constructor(private _jsonp:Jsonp,private _http:Http){}
 
     getPackageDetailsFromNuget(packageId:any){
+        nugetPack.GetNugetPackageStats(packageId).then(function(data:any){
+            console.log(data);
+        });
+        
         let packageUrl=`${this.URL_Base}:${packageId}`;
         return this._http.get(packageUrl)
             .map((response:Response)=>{
