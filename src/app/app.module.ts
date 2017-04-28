@@ -10,7 +10,6 @@ import 'rxjs/Rx'; // get everything from Rx
 import { AppComponent }  from './app.component';
 import {PackageDataService} from './common/packageDataService';
 import {MenuHelper} from './common/menuHelper';
-import {NugetService} from './nugetstats/nugetService';
 
 import {ExtensionMethodSampleComponent} from './common/extensionMethodSample.component';
 
@@ -49,6 +48,6 @@ import { Routing } from './app.routes';
     NugetStatsComponent
   ],
   bootstrap:    [ AppComponent ],
-  providers:[PackageDataService,MenuHelper,NugetService]
+  providers:[PackageDataService,MenuHelper]
 })
 export class AppModule { }
