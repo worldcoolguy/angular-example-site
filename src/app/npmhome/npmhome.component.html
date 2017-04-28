@@ -1,0 +1,41 @@
+<aside>
+    <p>
+        npm
+    </p>
+</aside>
+
+<div class="ui card">
+    <div class="uicontent">
+        <div class="uiheader">GetNugetPackageStats</div>
+        <div class="uimeta">
+            A Node.js package that gets a nuget package statistics.
+        </div>
+    </div>
+    <div class="uicontent">
+        <div class="extensionBlock">
+            <p>
+                Usage
+            </p>
+            <pre class="codePre"><code class="javascript hljs codeFont">
+npm install nuget-getstats -S
+                
+var nugetStats = require('./index');
+nugetStats
+    .GetNugetPackageStats('printclassinstance')
+    .then(data => console.log(data));
+</code></pre>
+
+            <p>
+                Output
+            </p>
+            <pre class="codePre"><code class="json hljs codeFont">{{ '{' }}
+    Title: 'Object and Type Extensions',
+    ProjectUrl: 'https://harip.github.io/site/printclassinstance',
+    Version: '3.2.0',
+    TotalDownloads: 2306 
+{{ '}' }}
+</code></pre>
+
+        </div>
+    </div>
+</div>

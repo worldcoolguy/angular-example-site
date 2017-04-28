@@ -1,7 +1,6 @@
 import { Component, OnInit, Input,Injectable,NgZone   } from '@angular/core';
 import { NugetPackageMeta } from '../models/nugetpackagemeta'
-
-var nugetPack=require('nuget.getstats');
+import { NugetService } from './nugetService';
 
 @Component({
     selector: 'app-nugetstats',
@@ -12,16 +11,13 @@ var nugetPack=require('nuget.getstats');
 export class NugetStatsComponent implements OnInit   {
     @Input() packageId: string;
     packageInfo:any;
-    constructor(private _ngZone: NgZone) {
+        constructor(private _nugetService:NugetService) {
         this.packageInfo=new NugetPackageMeta();
     }
     ngOnInit() {      
-        nugetPack
-         .GetNugetPackageStats(this.packageId)
-         .then( (data:any)=>{
-            this._ngZone.run(()=> {
-                this.packageInfo=data;
-            });
-         })
+        this._nugetService
+         .getPackageDetailsFromNuget(this.packageId)
+         .then(data => { this.packageInfo= data; });
+
     }
 }

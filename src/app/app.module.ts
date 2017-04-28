@@ -9,6 +9,7 @@ import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import 'rxjs/Rx'; // get everything from Rx
 import { AppComponent }  from './app.component';
 import {PackageDataService} from './common/packageDataService';
+import {NugetService} from './nugetstats/nugetService';
 import {MenuHelper} from './common/menuHelper';
 
 import {ExtensionMethodSampleComponent} from './common/extensionMethodSample.component';
@@ -24,6 +25,7 @@ import {HomeComponent} from './home/home.component';
 import {MenuComponent} from './menu/menu.component';
 import {ExtensionsListComponent} from './common/extensionsList.component';
 import {NugetStatsComponent} from './nugetstats/nugetstats.component';
+import {NpmHomeComponent} from './npmhome/npmhome.component';
 
 import { Routing } from './app.routes';
 
@@ -45,9 +47,10 @@ import { Routing } from './app.routes';
     HomeComponent,
     MenuComponent,
     ExtensionsListComponent,
-    NugetStatsComponent
+    NugetStatsComponent,
+    NpmHomeComponent
   ],
   bootstrap:    [ AppComponent ],
-  providers:[PackageDataService,MenuHelper]
+  providers:[PackageDataService,MenuHelper,NugetService]
 })
 export class AppModule { }
