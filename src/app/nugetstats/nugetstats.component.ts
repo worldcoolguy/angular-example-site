@@ -11,13 +11,12 @@ import { NugetService } from './nugetService';
 export class NugetStatsComponent implements OnInit   {
     @Input() packageId: string;
     packageInfo:any;
-        constructor(private _nugetService:NugetService) {
+    constructor(private _nugetService:NugetService) {
         this.packageInfo=new NugetPackageMeta();
     }
     ngOnInit() {      
         this._nugetService
          .getPackageDetailsFromNuget(this.packageId)
          .then(data => { this.packageInfo= data; });
-
     }
 }

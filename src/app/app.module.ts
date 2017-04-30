@@ -10,6 +10,7 @@ import 'rxjs/Rx'; // get everything from Rx
 import { AppComponent }  from './app.component';
 import {PackageDataService} from './common/packageDataService';
 import {NugetService} from './nugetstats/nugetService';
+import {NpmStatsService} from './npmhome/npmStatsService';
 import {MenuHelper} from './common/menuHelper';
 
 import {ExtensionMethodSampleComponent} from './common/extensionMethodSample.component';
@@ -51,6 +52,6 @@ import { Routing } from './app.routes';
     NpmHomeComponent
   ],
   bootstrap:    [ AppComponent ],
-  providers:[PackageDataService,MenuHelper,NugetService]
+  providers:[PackageDataService,MenuHelper,NugetService,NpmStatsService]
 })
 export class AppModule { }
