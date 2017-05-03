@@ -9,9 +9,13 @@ import { NpmStatsService } from './npmStatsService';
 })
 
 export class NpmHomeComponent implements OnInit {
-    npmDownloads:any;
+    npmDownloads1:any;
+    npmDownloads2:any;
     constructor(private _npmStatsService:NpmStatsService) {
-        this.npmDownloads={
+        this.npmDownloads1={
+            totalDownloads:0
+        };
+        this.npmDownloads2={
             totalDownloads:0
         };
     }
@@ -20,8 +24,16 @@ export class NpmHomeComponent implements OnInit {
             .getNpmDownloadCount('nuget.getstats')
             .then( data=>{
                 if (data){
-                    this.npmDownloads.totalDownloads=data.downloads;
+                    this.npmDownloads1.totalDownloads=data.downloads;
                 }                    
             });
+
+         this._npmStatsService
+            .getNpmDownloadCount('npm.getstats')
+            .then( data=>{
+                if (data){
+                    this.npmDownloads2.totalDownloads=data;
+                }                    
+            });            
     }
 }

@@ -20,9 +20,9 @@
                 Usage
             </p>
             <pre class="codePre"><code class="javascript hljs codeFont">
-npm install nuget-getstats -S
+npm install nuget.getstats -S
                 
-var nugetStats = require('./index');
+var nugetStats = require('nuget.getstats');
 nugetStats
     .GetNugetPackageStats('printclassinstance')
     .then(data => console.log(data));
@@ -43,7 +43,44 @@ nugetStats
     </div>
     <div class="extra uimeta">
         <span class="right floated" style="color:red">
-            Downloads: {{npmDownloads.totalDownloads}}
+            Downloads: {{npmDownloads1.totalDownloads}}
+        </span>
+    </div>
+</div>
+
+
+<div class="ui card">
+    <div class="uicontent">
+        <div class="right floated meta">
+            <a href="https://github.com/harip/npm.getstats"><i class="fa fa-git fa-lg" aria-hidden="true"></i></a>
+        </div>
+        <a class="uiheader" href="https://www.npmjs.com/package/npm.getstats"><i class="fa fa-external-link fa-lg" aria-hidden="true"></i> npm.getstats</a>
+        <div class="uimeta">
+            A Node.js package that gets a npm package statistics.
+        </div>
+    </div>
+    <div class="uicontent">
+        <div class="extensionBlock">
+            <p>
+                Usage
+            </p>
+            <pre class="codePre"><code class="javascript hljs codeFont">
+npm install npm.getstats -S
+                
+var npmStats = require('npm.getstats');
+npmGetStats.getNpmStats('jquery')
+    .then(function(data) {{ '{' }}
+        console.log(data);
+    {{ '}' }})
+    .catch(function(data) {{ '{' }}
+        console.log(data);
+    {{ '}' }});
+</code></pre>
+        </div>
+    </div>
+    <div class="extra uimeta">
+        <span class="right floated" style="color:red">
+            Downloads: {{npmDownloads2.totalDownloads}}
         </span>
     </div>
 </div>
