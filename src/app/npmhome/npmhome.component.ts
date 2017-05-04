@@ -32,7 +32,7 @@ export class NpmHomeComponent implements OnInit {
             .getNpmDownloadCount('npm.getstats')
             .then( data=>{
                 if (data){
-                    this.npmDownloads2.totalDownloads=data;
+                    this.npmDownloads2.totalDownloads=data.downloads;
                 }                    
             });            
     }
