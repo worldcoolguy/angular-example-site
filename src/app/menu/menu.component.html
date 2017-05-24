@@ -4,25 +4,25 @@
 </a>
 <div id="menu">
     <div class="pure-menu">
-        <a [routerLink]="['/home']" class="pure-menu-heading"><i class="fa fa-list" aria-hidden="true"></i> nuget</a>
+        <a [routerLink]="['/home']" (click)='menuItemClick()' class="pure-menu-heading"><i class="fa fa-list" aria-hidden="true"></i> nuget</a>
         <ul class="pure-menu-list">
             <li class="pure-menu-item" routerLinkActive="active">
-                <a [routerLink]="['/printclassinstance']" class="pure-menu-link">ObjectExtensions</a>
+                <a [routerLink]="['/printclassinstance']" (click)='menuItemClick()' class="pure-menu-link">ObjectExtensions</a>
             </li>
             <li class="pure-menu-item">
-                <a [routerLink]="['/simplesalesforceconnect']" class="pure-menu-link">SimpleSalesforceConnect</a>
+                <a [routerLink]="['/simplesalesforceconnect']" (click)='menuItemClick()' class="pure-menu-link">SimpleSalesforceConnect</a>
             </li>
             <li class="pure-menu-item">
-                <a [routerLink]="['/apiauthenticate']" class="pure-menu-link">ApiAuthenticate</a>
+                <a [routerLink]="['/apiauthenticate']" (click)='menuItemClick()' class="pure-menu-link">ApiAuthenticate</a>
             </li>
             <li class="pure-menu-item">
-                <a [routerLink]="['/simpleblackboardconnect']" class="pure-menu-link">SimpleBlackboardConnect</a>
+                <a [routerLink]="['/simpleblackboardconnect']" (click)='menuItemClick()' class="pure-menu-link">SimpleBlackboardConnect</a>
             </li>
             <li class="pure-menu-item">
-                <a [routerLink]="['/assemblyextension']" class="pure-menu-link">AssemblyExtensions </a>
+                <a [routerLink]="['/assemblyextension']" (click)='menuItemClick()' class="pure-menu-link">AssemblyExtensions </a>
             </li>
         </ul>
 
-        <a [routerLink]="['/npmhome']" class="pure-menu-heading"><i class="fa fa-list" aria-hidden="true"></i > npm</a>
+        <a [routerLink]="['/npmhome']" (click)='menuItemClick()' class="pure-menu-heading"><i class="fa fa-list" aria-hidden="true"></i > npm</a>
     </div>
 </div>

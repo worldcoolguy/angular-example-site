@@ -19,7 +19,6 @@ export class MenuComponent implements OnInit {
 
     menuLinkClick(){
         this.clickClass='menu-link active';
-
         let active = 'active';
         this._menuHelper
             .toggleClass(this.layoutClass.cssClass,active)
@@ -27,4 +26,11 @@ export class MenuComponent implements OnInit {
                 this.layoutClass.cssClass=data;
             });
     }   
+    menuItemClick(){
+        this._menuHelper
+            .toggleClass(" active","active")
+            .then((data:any)=>{                
+                this.layoutClass.cssClass=data;
+            });
+    }
 }
