@@ -9,18 +9,20 @@ import {PackageDataService} from '../common/packageDataService';
 })
 
 export class HomeComponent implements OnInit {
-    URL_NugetPackages = './assets/nugetpackages.json';
-    nugetData:any[]
+    URL_NugetPackages = './assets/packages.json';
+    nugetData:any[];
+    npmData:any[];
 
    constructor(private _packageDataService: PackageDataService) { }
     ngOnInit() {
         this._packageDataService
             .getExtensionsData(this.URL_NugetPackages)
             .then((data) => {   
-                this.nugetData=data;
+                this.nugetData=data.filter((d:any)=> {return  d.type==="nuget"});
+                this.npmData=data.filter((d:any)=> {return  d.type==="npm"});
             })
             .catch((err) => {
-                console.log(err); // dont do this, show the user a nice message
+                console.log(err);
             });
         }
 }

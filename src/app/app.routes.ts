@@ -9,6 +9,8 @@ import {AssemblyExtensionComponent} from './assemblyextension/assemblyextension.
 import {HomeComponent} from './home/home.component';
 import {MenuComponent} from './menu/menu.component';
 import {NpmHomeComponent} from './npmhome/npmhome.component';
+import {AboutComponent} from './about/about.component';
+import {RecipesComponent} from './recipes/recipes.component';
 
 export const routes: Routes = [
   { path: 'printclassinstance', component: PrintClassInstanceComponent },
@@ -19,6 +21,8 @@ export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'npmhome', component: NpmHomeComponent },
   { path: 'menu', component: MenuComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'recipes', component: RecipesComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 

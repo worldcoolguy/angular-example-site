@@ -5,6 +5,7 @@ import { JsonpModule }    from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
+import { DisqusModule } from "ngx-disqus";
 
 import 'rxjs/Rx'; // get everything from Rx
 import { AppComponent }  from './app.component';
@@ -27,6 +28,8 @@ import {MenuComponent} from './menu/menu.component';
 import {ExtensionsListComponent} from './common/extensionsList.component';
 import {NugetStatsComponent} from './nugetstats/nugetstats.component';
 import {NpmHomeComponent} from './npmhome/npmhome.component';
+import {AboutComponent} from './about/about.component';
+import {RecipesComponent} from './recipes/recipes.component';
 
 import { Routing } from './app.routes';
 
@@ -35,7 +38,8 @@ import { Routing } from './app.routes';
     HttpModule,
     JsonpModule,
     Routing,
-    Ng2PageScrollModule.forRoot()
+    Ng2PageScrollModule.forRoot(),
+    DisqusModule.forRoot('https-harip-github-io-site')
   ],
   declarations: [ AppComponent,
     PrintClassInstanceComponent,
@@ -49,7 +53,9 @@ import { Routing } from './app.routes';
     MenuComponent,
     ExtensionsListComponent,
     NugetStatsComponent,
-    NpmHomeComponent
+    NpmHomeComponent,
+    AboutComponent,
+    RecipesComponent
   ],
   bootstrap:    [ AppComponent ],
   providers:[PackageDataService,MenuHelper,NugetService,NpmStatsService]
