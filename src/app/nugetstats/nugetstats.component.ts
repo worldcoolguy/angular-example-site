@@ -1,4 +1,4 @@
-import { Component, OnInit, Input,Injectable,NgZone   } from '@angular/core';
+import { Component, OnInit, Input,Injectable   } from '@angular/core';
 import { NugetPackageMeta } from '../models/nugetpackagemeta'
 import { NugetService } from './nugetService';
 
