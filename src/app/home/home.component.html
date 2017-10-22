@@ -13,6 +13,9 @@
             <div class="uimeta">
                 {{nData.description}}
             </div>
+            <a href="{{nData.buildstatus}}">
+                <img src="{{nData.buildbadge}}" alt="">
+            </a>
         </div>
         <div class="extra uimeta">
             <app-nugetstats packageId="{{nData.packageId}}">Getting Nuget Stats</app-nugetstats>
