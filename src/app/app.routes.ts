@@ -23,7 +23,7 @@ export const routes: Routes = [
   { path: 'menu', component: MenuComponent },
   { path: 'about', component: AboutComponent },
   { path: 'recipes', component: RecipesComponent },
-  { path: '', redirectTo: '/recipes', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 export const Routing: ModuleWithProviders = RouterModule.forRoot(routes);
