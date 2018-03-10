@@ -4,13 +4,9 @@
 </a>
 <div id="menu">
     <div class="pure-menu">
-        <a [routerLink]="['/recipes']" (click)='menuItemClick()' class="pure-menu-heading"><i class="fa fa-cutlery" aria-hidden="true"></i > Recipes</a>
-
-        <a [routerLink]="['/about']" (click)='menuItemClick()' class="pure-menu-heading"><i class="fa fa-question" aria-hidden="true"></i> About Us</a>
-        <ul class="pure-menu-list">
-            <li class="pure-menu-item" routerLinkActive="active">
-                <a [routerLink]="['/home']" (click)='menuItemClick()' class="pure-menu-link">packages</a>
-            </li>
-        </ul>
+        <!--<a [routerLink]="['/recipes']" (click)='menuItemClick()' class="pure-menu-heading"><i class="fa fa-cutlery" aria-hidden="true"></i > Recipes</a>-->
+        <a [routerLink]="['/home']" (click)='menuItemClick()' class="pure-menu-heading">packages</a>
+        <a [routerLink]="['/python']" (click)='menuItemClick()' class="pure-menu-heading">Python</a>
+        <a [routerLink]="['/about']" (click)='menuItemClick()' class="pure-menu-heading">About Us</a>
     </div>
 </div>

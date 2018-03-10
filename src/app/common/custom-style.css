@@ -57,3 +57,8 @@ aside {
     border-radius: .28571429rem;
     box-shadow: none;
 }
+
+.uiimagecontent{
+    border: none;
+    box-shadow:0px;
+}

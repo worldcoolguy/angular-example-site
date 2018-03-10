@@ -32,6 +32,7 @@ import {AboutComponent} from './about/about.component';
 import {RecipesComponent} from './recipes/recipes.component';
 
 import { Routing } from './app.routes';
+import { PythonComponent } from './python/python.component';
 
 @NgModule({
   imports:      [ BrowserModule,
@@ -55,7 +56,8 @@ import { Routing } from './app.routes';
     NugetStatsComponent,
     NpmHomeComponent,
     AboutComponent,
-    RecipesComponent
+    RecipesComponent,
+    PythonComponent
   ],
   bootstrap:    [ AppComponent ],
   providers:[PackageDataService,MenuHelper,NugetService,NpmStatsService]
