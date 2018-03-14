@@ -2,8 +2,10 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule }    from '@angular/http';
 import { JsonpModule }    from '@angular/http';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router'; 
+import { FormsModule } from '@angular/forms';
 
+import {CodemirrorModule} from 'ng2-codemirror-typescript/Codemirror';
 import {Ng2PageScrollModule} from 'ng2-page-scroll'; 
 import 'rxjs/Rx'; // get everything from Rx
 import { AppComponent }  from './app.component';
@@ -34,9 +36,11 @@ import { PythonComponent } from './python/python.component';
 
 @NgModule({
   imports:      [ BrowserModule,
+    FormsModule,
     HttpModule,
     JsonpModule,
     Routing,
+    CodemirrorModule,
     Ng2PageScrollModule.forRoot()
   ],
   declarations: [ AppComponent,
