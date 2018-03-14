@@ -24,7 +24,7 @@
             "app/common/segment.css",
             "app/common/custom-style.css",
             "../node_modules/codemirror/lib/codemirror.css",
-            "../node_modules/codemirror/theme/duotone-light.css"
+            "../node_modules/codemirror/theme/mdn-like.css"
         ],
         "scripts": [ 
             "../node_modules/codemirror/lib/codemirror.js",

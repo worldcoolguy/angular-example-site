@@ -18,7 +18,7 @@ export class PythonComponent implements OnInit {
         this.config={ 
             lineNumbers: true, 
             mode: 'python',
-            theme:'duotone-light'
+            theme:'mdn-like'
         };
     }
     ngOnInit() {
