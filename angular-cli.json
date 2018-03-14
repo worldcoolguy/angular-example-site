@@ -22,9 +22,14 @@
             "app/common/table.css",
             "app/common/image.css",
             "app/common/segment.css",
-            "app/common/custom-style.css"
+            "app/common/custom-style.css",
+            "../node_modules/codemirror/lib/codemirror.css",
+            "../node_modules/codemirror/theme/duotone-light.css"
         ],
-        "scripts": [ "../node_modules/codemirror/lib/codemirror.js" ],
+        "scripts": [ 
+            "../node_modules/codemirror/lib/codemirror.js",
+            "../node_modules/codemirror/mode/python/python.js"
+        ],
         "environments": {
             "source": "environments/environment.ts",
             "dev": "environments/environment.ts",

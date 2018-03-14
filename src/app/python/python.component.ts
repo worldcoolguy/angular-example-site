@@ -2,44 +2,25 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import { Injectable } from '@angular/core';
 import {PackageDataService} from '../common/packageDataService';
-import 'codemirror'
-import 'codemirror/mode/javascript/javascript'
 import {CodemirrorModule} from 'ng2-codemirror-typescript/Codemirror';
-import { NgModel } from '@angular/forms';
-
 
 @Component({
     selector: 'app-python',
-    template: `
-    <h1>Codemirror sample with Angular 2</h1>
-    <codemirror [(ngModel)]="content" [config]="config"></codemirror>
-  `,
+    templateUrl:'./python.component.html'
 })
 
 export class PythonComponent implements OnInit {
     URL_Python = './assets/python.json';
     pythonData:any[];
     @Input() content:string;
-    @Input() config:{
-        lineNumbers: true,
-        lineWrapping: true,
-        mode: 'javascript'
-      };
+    config:{};
 
-    constructor(private _packageDataService: PackageDataService) { 
-
-        this.content = `// ... some code !
-        package main
-        
-        import "fmt"
-        
-        // Send the sequence 2, 3, 4, ... to channel 'ch'.
-        func generate(ch chan<- int) {
-            for i := 2; ; i++ {
-                ch <- i  // Send 'i' to channel 'ch'
-            }
-        }`        
-
+    constructor(private _packageDataService: PackageDataService) {
+        this.config={ 
+            lineNumbers: true, 
+            mode: 'python',
+            theme:'duotone-light'
+        };
     }
     ngOnInit() {
         this._packageDataService
