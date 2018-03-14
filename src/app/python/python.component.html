@@ -23,7 +23,7 @@
     </div>
 </div>
 
-<div class="card ui card" *ngFor="let nData of pythonData">
+<!-- <div class="card ui card" *ngFor="let nData of pythonData">
     <div class="uicontent">
             {{nData.title}}
     </div>
@@ -43,33 +43,29 @@
             </div>
         </div>
     </div>
-</div>
-
+</div> -->
 
 <div class="card ui card" *ngFor="let nData of pythonData">
     <div class="uicontent">
-            {{nData.title}}
+        {{nData.title}}
     </div>
     <div class="uicontent">
-            <table class="ui celled table stackable">
-                    <tbody>
-                      <tr>
-                        <td>
-
-                                <div class="ui fluid image">
-                                        <img src="{{nData.ploturl}}">
-                                      </div> 
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
- 
-                            <codemirror [(ngModel)]="nData.code" [config]="config"></codemirror>
-
-                        
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+        <table class="ui celled table stackable">
+            <tbody>
+                <tr>
+                <td>
+                    <div class="ui fluid image">
+                        <img src="{{nData.ploturl}}">
+                    </div> 
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <codemirror [(ngModel)]="nData.code" 
+                        [config]="config"></codemirror>
+                </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
