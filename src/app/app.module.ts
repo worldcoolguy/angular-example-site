@@ -4,9 +4,7 @@ import { HttpModule }    from '@angular/http';
 import { JsonpModule }    from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 
-import {Ng2PageScrollModule} from 'ng2-page-scroll';
-import { DisqusModule } from "ngx-disqus";
-
+import {Ng2PageScrollModule} from 'ng2-page-scroll'; 
 import 'rxjs/Rx'; // get everything from Rx
 import { AppComponent }  from './app.component';
 import {PackageDataService} from './common/packageDataService';
@@ -39,8 +37,7 @@ import { PythonComponent } from './python/python.component';
     HttpModule,
     JsonpModule,
     Routing,
-    Ng2PageScrollModule.forRoot(),
-    DisqusModule.forRoot('https-harip-github-io-site')
+    Ng2PageScrollModule.forRoot()
   ],
   declarations: [ AppComponent,
     PrintClassInstanceComponent,

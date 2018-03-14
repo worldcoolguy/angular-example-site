@@ -14,7 +14,7 @@
     <div class="uicontent">
         <div class="extensionBlock">
             <div class="image">
-                <img src="https://res.cloudinary.com/harip/image/upload/r_6/v1520663842/site/python/averagecurve.png">
+                <img style="max-width: 300px;" src="https://res.cloudinary.com/harip/image/upload/r_6/v1520663842/site/python/averagecurve.png">
             </div>  
         </div>
     </div>
@@ -43,5 +43,35 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+
+<div class="card ui card" *ngFor="let nData of pythonData">
+    <div class="uicontent">
+            {{nData.title}}
+    </div>
+    <div class="uicontent">
+            <table class="ui celled table stackable">
+                    <tbody>
+                      <tr>
+                        <td>
+
+                                <div class="ui fluid image">
+                                        <img src="{{nData.ploturl}}">
+                                      </div> 
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+ 
+                                <div >
+                                <pre ><code  class="javascript hljs codeFont">{{nData.code}}</code></pre>
+                            </div> 
+                        
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
     </div>
 </div>
