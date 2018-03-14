@@ -10,10 +10,7 @@ import { NgModel } from '@angular/forms';
 
 @Component({
     selector: 'app-python',
-    template: `
-    <h1>Codemirror sample with Angular 2</h1>
-    <codemirror [(ngModel)]="content" [config]="config"></codemirror>
-  `,
+    templateUrl:'./python.component.html'
 })
 
 export class PythonComponent implements OnInit {
