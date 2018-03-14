@@ -2,7 +2,6 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import { Injectable } from '@angular/core';
 import {PackageDataService} from '../common/packageDataService';
-import {CodemirrorModule} from 'ng2-codemirror-typescript/Codemirror';
 
 @Component({
     selector: 'app-python',
