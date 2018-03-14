@@ -20,7 +20,7 @@ export class PythonComponent implements OnInit {
     URL_Python = './assets/python.json';
     pythonData:any[];
     @Input() content:string;
-    codeMirrorConfig: {
+    @Input() config:{
         lineNumbers: true,
         lineWrapping: true,
         mode: 'javascript'
