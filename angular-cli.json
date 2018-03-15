@@ -30,8 +30,8 @@
             "../node_modules/codemirror/lib/codemirror.js",
             "../node_modules/codemirror/mode/python/python.js"
         ],
+        "environmentSource": "environments/environment.ts",
         "environments": {
-            "source": "environments/environment.ts",
             "dev": "environments/environment.ts",
             "prod": "environments/environment.prod.ts"
         }

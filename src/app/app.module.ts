@@ -5,6 +5,8 @@ import { JsonpModule }    from '@angular/http';
 import { Routes, RouterModule } from '@angular/router'; 
 import { FormsModule } from '@angular/forms';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatExpansionModule} from '@angular/material/expansion';
 import {CodemirrorModule} from 'ng2-codemirror-typescript/Codemirror';
 import {Ng2PageScrollModule} from 'ng2-page-scroll'; 
 import 'rxjs/Rx'; // get everything from Rx
@@ -40,6 +42,8 @@ import { PythonComponent } from './python/python.component';
     HttpModule,
     JsonpModule,
     Routing,
+    BrowserAnimationsModule,
+    MatExpansionModule,
     CodemirrorModule,
     Ng2PageScrollModule.forRoot()
   ],
