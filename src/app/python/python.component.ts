@@ -30,5 +30,7 @@ export class PythonComponent implements OnInit {
             .catch((err) => {
                 console.log(err);
             });
+
+            
     }
 }
