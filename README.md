@@ -1,4 +1,4 @@
 Angular
 
-ng build --prod --base-href "https://USERNAME.github.io/REPOSITORY/"
+ng build --prod --base-href "https://harip.github.io/site/"
 ngh [OPTIONS]
