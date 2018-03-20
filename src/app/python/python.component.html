@@ -23,6 +23,15 @@
     </div>
 </div>
 
+<div class="ui three stackable link raised cards" >
+    <div class="ui card" *ngFor="let nData of pythonData">   
+      <div class="image">
+        <img src="{{nData.ploturl}}">
+      </div>
+    </div>
+</div>
+
+<!-- 
 <div class="card ui card" *ngFor="let nData of pythonData">
     <div class="uicontent">
         {{nData.title}}
@@ -33,4 +42,4 @@
     </div> 
     <codemirror [(ngModel)]="nData.code"[config]="config"></codemirror> 
     </div>
-</div>
+</div> -->
