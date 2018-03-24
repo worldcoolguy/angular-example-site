@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input,ViewChild, ElementRef  } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import { Injectable } from '@angular/core';
 import {PackageDataService} from '../common/packageDataService';
@@ -13,6 +13,8 @@ export class PythonComponent implements OnInit {
     pythonData:any[];
     @Input() content:string;
     config:{};
+    myField:any;
+    @ViewChild('dataContainer') dataContainer: ElementRef;
 
     constructor(private _packageDataService: PackageDataService) {
         this.config={ 
@@ -20,6 +22,7 @@ export class PythonComponent implements OnInit {
             mode: 'python',
             theme:'mdn-like'
         };
+
     }
     ngOnInit() {
         this._packageDataService
@@ -31,6 +34,14 @@ export class PythonComponent implements OnInit {
                 console.log(err);
             });
 
-            
+        this._packageDataService
+            .get('https://ic8usr698c.execute-api.us-east-1.amazonaws.com/dev/')
+            .then((data) => {   
+                this.dataContainer.nativeElement.innerHTML=data._body;
+                this.myField=data._body;
+            })
+            .catch((err) => {
+                console.log(err);
+            });
     }
 }
