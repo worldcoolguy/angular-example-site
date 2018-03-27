@@ -6,7 +6,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDialogModule} from '@angular/material/dialog'
+
 import {CodemirrorModule} from 'ng2-codemirror-typescript/Codemirror';
 import {Ng2PageScrollModule} from 'ng2-page-scroll'; 
 import 'rxjs/Rx'; // get everything from Rx
@@ -32,9 +35,11 @@ import {NugetStatsComponent} from './nugetstats/nugetstats.component';
 import {NpmHomeComponent} from './npmhome/npmhome.component';
 import {AboutComponent} from './about/about.component';
 import {RecipesComponent} from './recipes/recipes.component';
+import { PythonComponent } from './python/python.component';
+import { PythonChartComponent } from './python/pythonChart.component';
 
 import { Routing } from './app.routes';
-import { PythonComponent } from './python/python.component';
+
 
 @NgModule({
   imports:      [ BrowserModule,
@@ -44,6 +49,7 @@ import { PythonComponent } from './python/python.component';
     Routing,
     BrowserAnimationsModule,
     MatExpansionModule,
+    MatDialogModule,
     CodemirrorModule,
     Ng2PageScrollModule.forRoot()
   ],
@@ -62,7 +68,11 @@ import { PythonComponent } from './python/python.component';
     NpmHomeComponent,
     AboutComponent,
     RecipesComponent,
-    PythonComponent
+    PythonComponent,
+    PythonChartComponent
+  ],
+  entryComponents: [
+    PythonChartComponent
   ],
   bootstrap:    [ AppComponent ],
   providers:[PackageDataService,MenuHelper,NugetService,NpmStatsService]

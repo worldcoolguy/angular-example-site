@@ -4,7 +4,7 @@
     </p>
 </aside>
 
-<div #dataContainer></div>
+<!-- <div #dataContainer></div>
 
 
 <div class="card ui card">
@@ -24,18 +24,19 @@
     <div class="extra content">
         <a href="https://res.cloudinary.com/harip/raw/upload/v1520830685/timeseries.csv"><i class="fa fa-download fa-lg" aria-hidden="true"></i> Download</a>
     </div>
-</div>
+</div> -->
 
-<!-- 
-<div class="ui three stackable link raised cards" >
+<button mat-button (click)="openDialog()">Open dialog</button>
+
+<div class="ui four stackable link raised cards" >
     <div class="ui card" *ngFor="let nData of pythonData">   
       <div class="image">
         <img src="{{nData.ploturl}}">
       </div>
     </div>
-</div> -->
+</div>
 
-
+<!-- 
 <div class="card ui card" *ngFor="let nData of pythonData">
     <div class="uicontent">
         {{nData.title}}
@@ -47,4 +48,4 @@
     <codemirror [(ngModel)]="nData.code"[config]="config"></codemirror> 
     </div>
 </div>
-
+ -->

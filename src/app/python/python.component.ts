@@ -1,6 +1,9 @@
 import { Component, OnInit, Input,ViewChild, ElementRef  } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import { Injectable } from '@angular/core';
+import {MatDialog} from '@angular/material';
+
+import {PythonChartComponent} from './pythonChart.component';
 import {PackageDataService} from '../common/packageDataService';
 
 @Component({
@@ -16,7 +19,7 @@ export class PythonComponent implements OnInit {
     myField:any;
     @ViewChild('dataContainer') dataContainer: ElementRef;
 
-    constructor(private _packageDataService: PackageDataService) {
+    constructor(private _packageDataService: PackageDataService,public dialog: MatDialog) {
         this.config={ 
             lineNumbers: true, 
             mode: 'python',
@@ -24,6 +27,7 @@ export class PythonComponent implements OnInit {
         };
 
     }
+
     ngOnInit() {
         this._packageDataService
             .getExtensionsData(this.URL_Python)
@@ -33,15 +37,25 @@ export class PythonComponent implements OnInit {
             .catch((err) => {
                 console.log(err);
             });
-
-        this._packageDataService
-            .get('https://ic8usr698c.execute-api.us-east-1.amazonaws.com/dev/')
-            .then((data) => {   
-                this.dataContainer.nativeElement.innerHTML=data._body;
-                this.myField=data._body;
-            })
-            .catch((err) => {
-                console.log(err);
-            });
+        // this._packageDataService
+        //     .get('https://ic8usr698c.execute-api.us-east-1.amazonaws.com/dev/')
+        //     .then((data) => {   
+        //         this.dataContainer.nativeElement.innerHTML=data._body;
+        //         this.myField=data._body;
+        //     })
+        //     .catch((err) => {
+        //         console.log(err);
+        //     });
     }
+    
+    openDialog() {
+        const dialogRef = this.dialog.open(PythonChartComponent, {
+            height: '350px'
+          });
+
+        dialogRef.afterClosed().subscribe(result => {
+            console.log(`Dialog result: ${result}`);
+        });          
+    }
+
 }
