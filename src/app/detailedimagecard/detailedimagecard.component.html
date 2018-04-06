@@ -1,20 +1,24 @@
-<div id="main">
-    <div class="header">
-        <aside>
-            <h1>{{packageData.title}}</h1>
-        </aside>
-        <p>
-            <a href="{{packageData.packageLink}}">{{packageData.location}}</a>
-            <a href="{{packageData.gitLink}}" [hidden]="!showhideSourceLink" style="padding-left: 20px;">Source Code</a>
+<aside>
+    <p>        
+    </p>
+</aside>
 
-        </p>
+<div class="card ui card" style="max-height: 100%;">
+    <div class="uicontent">
+        {{packageData.title}}
+        <span class="right floated">
+            
+                <a href="#" [routerLink]="['/python']">
+
+                    <i class="fas fa-backward fa-2x"></i>
+                </a>
+ 
+        </span>        
     </div>
-    <div class="content">
-        {{packageData.description}}
-        <p></p>
-         <extensionsList [hidden]="packageData.hideList" [extensionsList]="methodNames"></extensionsList>
-        <div *ngFor="let extMethod of packageData.data">
-            <extensionMethod [extMethod]="extMethod"></extensionMethod>
-        </div>
+    <div class="uicontent">
+    <div class="ui image">
+        <img style="width: 290px;" src="{{packageData.ploturl}}">
+    </div> 
+    <codemirror style="height: auto;  line-height:1em;" [(ngModel)]="packageData.code" [config]="config"></codemirror> 
     </div>
 </div>
