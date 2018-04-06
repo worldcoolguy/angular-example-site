@@ -38,9 +38,9 @@ import {RecipesComponent} from './recipes/recipes.component';
 import { PythonComponent } from './python/python.component';
 import { PythonChartComponent } from './python/pythonChart.component';
 import {ThumbNailCardsComponent} from './thumbnailcards/thumbnailcards.component';
+import {DetailedCardComponent} from './detailedcard/detailedcard.component';
 
 import { Routing } from './app.routes';
-
 
 @NgModule({
   imports:      [ BrowserModule,
@@ -71,7 +71,8 @@ import { Routing } from './app.routes';
     RecipesComponent,
     PythonComponent,
     PythonChartComponent,
-    ThumbNailCardsComponent
+    ThumbNailCardsComponent,
+    DetailedCardComponent
   ],
   entryComponents: [
     PythonChartComponent

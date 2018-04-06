@@ -13,6 +13,7 @@ import {AboutComponent} from './about/about.component';
 import {RecipesComponent} from './recipes/recipes.component';
 import {PythonComponent} from './python/python.component';
 import {ThumbNailCardsComponent} from './thumbnailcards/thumbnailcards.component';
+import {DetailedCardComponent} from './detailedcard/detailedcard.component';
 
 export const routes: Routes = [
   { path: 'printclassinstance', component: PrintClassInstanceComponent },
@@ -26,6 +27,7 @@ export const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'recipes', component: RecipesComponent },
   { path: 'python', component: PythonComponent },
+  { path: 'detailedcard/:id', component: DetailedCardComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 

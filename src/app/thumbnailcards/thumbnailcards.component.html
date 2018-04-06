@@ -7,7 +7,7 @@
 <div style="padding-left: 20px;" class="ui raised cards">
     <div class="card thumbCardSize" *ngFor="let nData of sectionData">
         <div class="uicontent">
-            <a class="uiheader" href="#" [routerLink]="['/' + nData.packageId]">
+            <a class="uiheader" href="#" [routerLink]="['/detailedcard' , nData.packageId]">
                 {{nData.title}}
             </a>
             <div class="uimeta">
