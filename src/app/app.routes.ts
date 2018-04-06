@@ -6,7 +6,6 @@ import {MenuComponent} from './menu/menu.component';
 import {AboutComponent} from './about/about.component';
 import {RecipesComponent} from './recipes/recipes.component';
 import {PythonComponent} from './python/python.component';
-import {ThumbNailCardsComponent} from './thumbnailcards/thumbnailcards.component';
 import {DetailedCardComponent} from './detailedcard/detailedcard.component';
 
 export const routes: Routes = [

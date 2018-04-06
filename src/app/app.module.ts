@@ -33,6 +33,8 @@ import { PythonComponent } from './python/python.component';
 import { PythonChartComponent } from './python/pythonChart.component';
 import {ThumbNailCardsComponent} from './thumbnailcards/thumbnailcards.component';
 import {DetailedCardComponent} from './detailedcard/detailedcard.component';
+import {ThumbNailImageCardsComponent} from './thumbnailimagecards/thumbnailimagecards.component';
+
 
 import { Routing } from './app.routes';
 
@@ -60,7 +62,8 @@ import { Routing } from './app.routes';
     PythonComponent,
     PythonChartComponent,
     ThumbNailCardsComponent,
-    DetailedCardComponent
+    DetailedCardComponent,
+    ThumbNailImageCardsComponent
   ],
   entryComponents: [
     PythonChartComponent
