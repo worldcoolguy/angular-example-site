@@ -23,7 +23,6 @@ import {ExtensionMethodSampleComponent} from './common/extensionMethodSample.com
 
 import {ExtensionMethodComponent} from './printclassinstance/extensionMethod.component';
 
-import {SimpleSalesforceConnectComponent} from './simplesalesforceconnect/simplesalesforceconnect.component';
 import {SimpleBlackboardConnectComponent} from './simpleblackboardconnect/simpleblackboardconnect.component';
 import {ApiAuthenticateComponent} from './apiauthenticate/apiauthenticate.component';
 import {AssemblyExtensionComponent} from './assemblyextension/assemblyextension.component';
@@ -56,7 +55,6 @@ import { Routing } from './app.routes';
   declarations: [ AppComponent,
     ExtensionMethodComponent,
     ExtensionMethodSampleComponent,
-    SimpleSalesforceConnectComponent,
     SimpleBlackboardConnectComponent,
     ApiAuthenticateComponent,
     AssemblyExtensionComponent,

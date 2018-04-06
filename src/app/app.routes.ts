@@ -1,7 +1,6 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import {SimpleSalesforceConnectComponent} from './simplesalesforceconnect/simplesalesforceconnect.component';
 import {SimpleBlackboardConnectComponent} from './simpleblackboardconnect/simpleblackboardconnect.component';
 import {ApiAuthenticateComponent} from './apiauthenticate/apiauthenticate.component';
 import {AssemblyExtensionComponent} from './assemblyextension/assemblyextension.component';
@@ -15,7 +14,6 @@ import {ThumbNailCardsComponent} from './thumbnailcards/thumbnailcards.component
 import {DetailedCardComponent} from './detailedcard/detailedcard.component';
 
 export const routes: Routes = [
-  { path: 'simplesalesforceconnect', component: SimpleSalesforceConnectComponent },
   { path: 'simpleblackboardconnect', component: SimpleBlackboardConnectComponent },
   { path: 'apiauthenticate', component: ApiAuthenticateComponent },
   { path: 'assemblyextension', component: AssemblyExtensionComponent },

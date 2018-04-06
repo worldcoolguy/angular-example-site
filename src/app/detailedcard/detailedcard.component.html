@@ -11,7 +11,7 @@
     <div class="content">
         {{packageData.description}}
         <p></p>
-        <extensionsList [extensionsList]="methodNames"></extensionsList>
+         <extensionsList [hidden]="packageData.hideList" [extensionsList]="methodNames"></extensionsList>
         <div *ngFor="let extMethod of packageData.data">
             <extensionMethod [extMethod]="extMethod"></extensionMethod>
         </div>

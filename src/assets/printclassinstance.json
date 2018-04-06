@@ -4,6 +4,7 @@
 "packageLink":"https://www.nuget.org/packages/PrintClassInstance",
 "gitLink":"https://github.com/harip/printclassinstance",
 "location":"Nuget",
+"hideList":false,
 "data":[{
         "methodName": "Snapshots",
         "description": "Create object snapshots.",
