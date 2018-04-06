@@ -1,7 +1,18 @@
-import { Component, OnInit, Input,ViewChild, ElementRef  } from '@angular/core';
+import { Component, OnInit, Input,ViewChild, ElementRef, Inject  } from '@angular/core';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 
 @Component({
     selector: 'python-chart',
     templateUrl: './pythonChart.component.html',
   })
-  export class PythonChartComponent {}
+  export class PythonChartComponent {
+
+    constructor(
+      public dialogRef: MatDialogRef<PythonChartComponent>,
+      @Inject(MAT_DIALOG_DATA) public data: any) { }
+  
+    onNoClick(): void {
+      this.dialogRef.close();
+    }    
+
+  }

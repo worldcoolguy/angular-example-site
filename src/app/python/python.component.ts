@@ -1,7 +1,7 @@
 import { Component, OnInit, Input,ViewChild, ElementRef  } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import { Injectable } from '@angular/core';
-import {MatDialog} from '@angular/material';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA, MatDialogConfig} from '@angular/material';
 
 import {PythonChartComponent} from './pythonChart.component';
 import {PackageDataService} from '../common/packageDataService';
@@ -25,7 +25,6 @@ export class PythonComponent implements OnInit {
             mode: 'python',
             theme:'mdn-like'
         };
-
     }
 
     ngOnInit() {
@@ -48,10 +47,12 @@ export class PythonComponent implements OnInit {
         //     });
     }
     
-    openDialog() {
-        const dialogRef = this.dialog.open(PythonChartComponent, {
-            height: '350px'
-          });
+    openDialog() : void{
+        const dialogConfig = new MatDialogConfig();
+        dialogConfig.disableClose = false;
+        dialogConfig.height = '200px'; 
+
+        let  dialogRef = this.dialog.open(PythonChartComponent, dialogConfig);
 
         dialogRef.afterClosed().subscribe(result => {
             console.log(`Dialog result: ${result}`);

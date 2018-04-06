@@ -37,6 +37,7 @@ import {AboutComponent} from './about/about.component';
 import {RecipesComponent} from './recipes/recipes.component';
 import { PythonComponent } from './python/python.component';
 import { PythonChartComponent } from './python/pythonChart.component';
+import {ThumbNailCardsComponent} from './thumbnailcards/thumbnailcards.component';
 
 import { Routing } from './app.routes';
 
@@ -69,12 +70,17 @@ import { Routing } from './app.routes';
     AboutComponent,
     RecipesComponent,
     PythonComponent,
-    PythonChartComponent
+    PythonChartComponent,
+    ThumbNailCardsComponent
   ],
   entryComponents: [
     PythonChartComponent
   ],
   bootstrap:    [ AppComponent ],
-  providers:[PackageDataService,MenuHelper,NugetService,NpmStatsService]
+  providers:[PackageDataService,
+    MenuHelper,
+    NugetService,
+    NpmStatsService
+  ]
 })
 export class AppModule { }

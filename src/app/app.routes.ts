@@ -12,6 +12,7 @@ import {NpmHomeComponent} from './npmhome/npmhome.component';
 import {AboutComponent} from './about/about.component';
 import {RecipesComponent} from './recipes/recipes.component';
 import {PythonComponent} from './python/python.component';
+import {ThumbNailCardsComponent} from './thumbnailcards/thumbnailcards.component';
 
 export const routes: Routes = [
   { path: 'printclassinstance', component: PrintClassInstanceComponent },
