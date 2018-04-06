@@ -7,6 +7,7 @@ import {AboutComponent} from './about/about.component';
 import {RecipesComponent} from './recipes/recipes.component';
 import {PythonComponent} from './python/python.component';
 import {DetailedCardComponent} from './detailedcard/detailedcard.component';
+import {DetailedImageCardComponent} from './detailedimagecard/detailedimagecard.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -15,6 +16,7 @@ export const routes: Routes = [
   { path: 'recipes', component: RecipesComponent },
   { path: 'python', component: PythonComponent },
   { path: 'detailedcard/:id', component: DetailedCardComponent },
+  { path: 'detailedimagecard/:id/:key', component: DetailedImageCardComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
