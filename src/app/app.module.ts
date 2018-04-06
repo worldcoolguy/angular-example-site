@@ -27,7 +27,6 @@ import {HomeComponent} from './home/home.component';
 import {MenuComponent} from './menu/menu.component';
 import {ExtensionsListComponent} from './common/extensionsList.component';
 import {NugetStatsComponent} from './nugetstats/nugetstats.component';
-import {NpmHomeComponent} from './npmhome/npmhome.component';
 import {AboutComponent} from './about/about.component';
 import {RecipesComponent} from './recipes/recipes.component';
 import { PythonComponent } from './python/python.component';
@@ -56,7 +55,6 @@ import { Routing } from './app.routes';
     MenuComponent,
     ExtensionsListComponent,
     NugetStatsComponent,
-    NpmHomeComponent,
     AboutComponent,
     RecipesComponent,
     PythonComponent,

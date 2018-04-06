@@ -31,6 +31,7 @@
         "type": "nuget"
     },
     {
+        "packageId": "nugetstats",
         "git": "https://github.com/harip/nuget.stats",
         "title": "nuget.getstats",
         "npmLink": "https://www.npmjs.com/package/nuget.getstats",
@@ -40,6 +41,7 @@
         "type": "npm"
     },
     {
+        "packageId": "npmstats",
         "git": "https://github.com/harip/npm.getstats",
         "title": "npm.getstats",
         "npmLink": "https://www.npmjs.com/package/npm.getstats",
