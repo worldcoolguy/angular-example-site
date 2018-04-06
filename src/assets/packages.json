@@ -7,7 +7,7 @@
         "type": "nuget"
     },
     {
-        "packageId": "AssemblyExtensions",
+        "packageId": "assemblyextensions",
         "title": "Assembly Extensions",
         "description": "Get metadata for an assembly.",
         "type": "nuget"

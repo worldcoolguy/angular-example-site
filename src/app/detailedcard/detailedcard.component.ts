@@ -18,7 +18,7 @@ export class DetailedCardComponent implements OnInit {
         private _route :  ActivatedRoute
     ) {}
     ngOnInit() {
-        let id = this._route.snapshot.paramMap.get('id')        
+        let id = this._route.snapshot.paramMap.get('id').toLowerCase();      
         let baseUrl=`./assets/${id}.json`;
 
         this._packageDataService
