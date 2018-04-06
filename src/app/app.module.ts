@@ -23,7 +23,6 @@ import {ExtensionMethodSampleComponent} from './common/extensionMethodSample.com
 
 import {ExtensionMethodComponent} from './printclassinstance/extensionMethod.component';
 
-import {ApiAuthenticateComponent} from './apiauthenticate/apiauthenticate.component';
 import {AssemblyExtensionComponent} from './assemblyextension/assemblyextension.component';
 import {HomeComponent} from './home/home.component';
 import {MenuComponent} from './menu/menu.component';
@@ -54,7 +53,6 @@ import { Routing } from './app.routes';
   declarations: [ AppComponent,
     ExtensionMethodComponent,
     ExtensionMethodSampleComponent,
-    ApiAuthenticateComponent,
     AssemblyExtensionComponent,
     HomeComponent,
     MenuComponent,

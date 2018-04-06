@@ -1,7 +1,6 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import {ApiAuthenticateComponent} from './apiauthenticate/apiauthenticate.component';
 import {AssemblyExtensionComponent} from './assemblyextension/assemblyextension.component';
 import {HomeComponent} from './home/home.component';
 import {MenuComponent} from './menu/menu.component';
@@ -13,7 +12,6 @@ import {ThumbNailCardsComponent} from './thumbnailcards/thumbnailcards.component
 import {DetailedCardComponent} from './detailedcard/detailedcard.component';
 
 export const routes: Routes = [
-  { path: 'apiauthenticate', component: ApiAuthenticateComponent },
   { path: 'assemblyextension', component: AssemblyExtensionComponent },
   { path: 'home', component: HomeComponent },
   { path: 'npmhome', component: NpmHomeComponent },
