@@ -21,7 +21,6 @@ import {MenuHelper} from './common/menuHelper';
 
 import {ExtensionMethodSampleComponent} from './common/extensionMethodSample.component';
 
-import {PrintClassInstanceComponent} from './printclassinstance/printclassinstance.component';
 import {ExtensionMethodComponent} from './printclassinstance/extensionMethod.component';
 
 import {SimpleSalesforceConnectComponent} from './simplesalesforceconnect/simplesalesforceconnect.component';
@@ -55,7 +54,6 @@ import { Routing } from './app.routes';
     Ng2PageScrollModule.forRoot()
   ],
   declarations: [ AppComponent,
-    PrintClassInstanceComponent,
     ExtensionMethodComponent,
     ExtensionMethodSampleComponent,
     SimpleSalesforceConnectComponent,
