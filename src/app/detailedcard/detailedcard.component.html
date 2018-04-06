@@ -5,7 +5,8 @@
         </aside>
         <p>
             <a href="{{packageData.packageLink}}">{{packageData.location}}</a>
-            <a href="{{packageData.gitLink}}" style="padding-left: 20px;">Source Code</a>
+            <a href="{{packageData.gitLink}}" [hidden]="!showhideSourceLink" style="padding-left: 20px;">Source Code</a>
+
         </p>
     </div>
     <div class="content">

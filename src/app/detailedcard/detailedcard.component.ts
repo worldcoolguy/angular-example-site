@@ -10,8 +10,9 @@ import {PackageDataService} from '../common/packageDataService';
 })
 
 export class DetailedCardComponent implements OnInit {
-    packageData: any[];
+    packageData: any;
     methodNames:any[];
+    showhideSourceLink:any;
 
     constructor(
         private _packageDataService: PackageDataService,
@@ -26,7 +27,7 @@ export class DetailedCardComponent implements OnInit {
             .then((returnData) => {
                 this.packageData = returnData
                 this.methodNames=returnData.data.map((d:any)=> d.methodName);
-                debugger
+                this.showhideSourceLink=this.packageData.gitLink ? true : false;
             })
             .catch((err) => {
                 console.log(err); // dont do this, show the user a nice message
