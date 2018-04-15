@@ -17,7 +17,7 @@
             </a>
         </div>
         <div class="extra uimeta">
-            <app-nugetstats [hidden]="nData.hasOwnProperty('hideCounts')" packageId="{{nData.packageId}}">Getting Nuget Stats</app-nugetstats>
+            <app-nugetstats dontGetStats="{{nData.hasOwnProperty('hideCounts')}}" [hidden]="nData.hasOwnProperty('hideCounts')" packageId="{{nData.packageId}}">Getting Nuget Stats</app-nugetstats>
         </div>
     </div>
 </div>

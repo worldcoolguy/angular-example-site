@@ -10,11 +10,15 @@ import { NugetService } from './nugetService';
 @Injectable()
 export class NugetStatsComponent implements OnInit   {
     @Input() packageId: string;
+    @Input() dontGetStats:boolean;
     packageInfo:any;
     constructor(private _nugetService:NugetService) {
         this.packageInfo=new NugetPackageMeta();
     }
-    ngOnInit() {      
+    ngOnInit() {     
+        if (this.dontGetStats){
+            return;
+        }        
         this._nugetService
          .getPackageDetailsFromNuget(this.packageId)
          .then(data => { this.packageInfo= data; });
