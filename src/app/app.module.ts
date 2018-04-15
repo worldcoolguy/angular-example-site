@@ -27,7 +27,6 @@ import {NugetStatsComponent} from './nugetstats/nugetstats.component';
 import {AboutComponent} from './about/about.component';
 import {RecipesComponent} from './recipes/recipes.component';
 import { PythonComponent } from './python/python.component';
-import { PythonChartComponent } from './python/pythonChart.component';
 import {ThumbNailCardsComponent} from './thumbnailcards/thumbnailcards.component';
 import {DetailedCardComponent} from './detailedcard/detailedcard.component';
 import {ThumbNailImageCardsComponent} from './thumbnailimagecards/thumbnailimagecards.component';
@@ -56,14 +55,10 @@ import { Routing } from './app.routes';
     AboutComponent,
     RecipesComponent,
     PythonComponent,
-    PythonChartComponent,
     ThumbNailCardsComponent,
     DetailedCardComponent,
     ThumbNailImageCardsComponent,
     DetailedImageCardComponent
-  ],
-  entryComponents: [
-    PythonChartComponent
   ],
   bootstrap:    [ AppComponent ],
   providers:[PackageDataService,
