@@ -15,7 +15,7 @@ export class NugetStatsComponent implements OnInit   {
     constructor(private _nugetService:NugetService) {
         this.packageInfo=new NugetPackageMeta();
     }
-    ngOnInit() {     
+    ngOnInit() {  
         if (this.dontGetStats){
             return;
         }        

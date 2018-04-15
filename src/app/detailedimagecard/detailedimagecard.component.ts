@@ -24,6 +24,7 @@ export class DetailedImageCardComponent implements OnInit {
             mode: 'python',
             theme:'mdn-like'
         };
+        this.packageData={};
     }
     ngOnInit() {
         let id = this._route.snapshot.paramMap.get('id').toLowerCase();      
@@ -38,6 +39,6 @@ export class DetailedImageCardComponent implements OnInit {
             })
             .catch((err) => {
                 console.log(err); // dont do this, show the user a nice message
-            });
+            });      
     }
 }
