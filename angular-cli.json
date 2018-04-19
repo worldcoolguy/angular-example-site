@@ -18,6 +18,7 @@
         "prefix": "app",
         "styles": [
             "app/common/side-menu.css",
+            "app/common/uimenu.css",
             "app/common/card.css",
             "app/common/table.css",
             "app/common/image.css",

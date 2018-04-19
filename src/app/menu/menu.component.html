@@ -3,10 +3,37 @@
     <span></span>
 </a>
 <div id="menu">
-    <div class="pure-menu">
-        <!--<a [routerLink]="['/recipes']" (click)='menuItemClick()' class="pure-menu-heading"><i class="fa fa-cutlery" aria-hidden="true"></i > Recipes</a>-->
-        <a [routerLink]="['/home']" (click)='menuItemClick()' class="pure-menu-heading">packages</a>
-        <a [routerLink]="['/python']" (click)='menuItemClick()' class="pure-menu-heading">Python</a>
-        <a [routerLink]="['/about']" (click)='menuItemClick()' class="pure-menu-heading">About Us</a>
+
+
+  <div class="ui vertical menu">
+    <div class="item">
+      <div class="uimenuheader">Packages</div>
+      <div class="menu">
+        <a [routerLink]="['/home']" (click)='menuItemClick()' class="item">nuget</a>
+        <a class="item">Consumer</a>
+      </div>
     </div>
+    <div class="item">
+      <div class="uimenuheader">CMS Solutions</div>
+      <div class="menu">
+        <a class="item">Rails</a>
+        <a class="item">Python</a>
+        <a class="item">PHP</a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="uimenuheader">Hosting</div>
+      <div class="menu">
+        <a class="item">Shared</a>
+        <a class="item">Dedicated</a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="uimenuheader">Support</div>
+      <div class="menu">
+        <a class="item">E-mail Support</a>
+        <a class="item">FAQs</a>
+      </div>
+    </div>
+  </div>
 </div>
