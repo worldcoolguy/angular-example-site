@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
     selector: 'app-home',
@@ -6,6 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class HomeComponent implements OnInit {
-   constructor() { }
-    ngOnInit() {}
+    sectionKey:string
+
+    constructor(private _route :  ActivatedRoute) { }
+    ngOnInit() {
+        debugger
+        this.sectionKey = this._route.snapshot.paramMap.get('sectionKey').toLowerCase(); 
+    }
 }

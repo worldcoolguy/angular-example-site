@@ -10,7 +10,7 @@ import {DetailedCardComponent} from './detailedcard/detailedcard.component';
 import {DetailedImageCardComponent} from './detailedimagecard/detailedimagecard.component';
 
 export const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: 'home/:sectionKey', component: HomeComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'about', component: AboutComponent },
   { path: 'recipes', component: RecipesComponent },
