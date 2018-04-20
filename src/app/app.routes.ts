@@ -6,6 +6,7 @@ import {MenuComponent} from './menu/menu.component';
 import {AboutComponent} from './about/about.component';
 import {RecipesComponent} from './recipes/recipes.component';
 import {PythonComponent} from './python/python.component';
+import {PythonDsComponent} from './python/pythonds.component';
 import {DetailedCardComponent} from './detailedcard/detailedcard.component';
 import {DetailedImageCardComponent} from './detailedimagecard/detailedimagecard.component';
 
@@ -15,9 +16,10 @@ export const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'recipes', component: RecipesComponent },
   { path: 'python', component: PythonComponent },
+  { path: 'pythonds', component: PythonDsComponent },
   { path: 'detailedcard/:id', component: DetailedCardComponent },
   { path: 'detailedimagecard/:id/:key', component: DetailedImageCardComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home/nuget', pathMatch: 'full' },
 ];
 
 export const Routing: ModuleWithProviders = RouterModule.forRoot(routes);

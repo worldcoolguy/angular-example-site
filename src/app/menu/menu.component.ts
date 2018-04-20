@@ -27,6 +27,7 @@ export class MenuComponent implements OnInit {
             });
     }   
     menuItemClick(){
+        debugger
         this._menuHelper
             .toggleClass(" active","active")
             .then((data:any)=>{                

@@ -26,7 +26,8 @@ import {ExtensionsListComponent} from './common/extensionsList.component';
 import {NugetStatsComponent} from './nugetstats/nugetstats.component';
 import {AboutComponent} from './about/about.component';
 import {RecipesComponent} from './recipes/recipes.component';
-import { PythonComponent } from './python/python.component';
+import {PythonComponent } from './python/python.component';
+import {PythonDsComponent } from './python/pythonds.component';
 import {ThumbNailCardsComponent} from './thumbnailcards/thumbnailcards.component';
 import {DetailedCardComponent} from './detailedcard/detailedcard.component';
 import {ThumbNailImageCardsComponent} from './thumbnailimagecards/thumbnailimagecards.component';
@@ -55,6 +56,7 @@ import { Routing } from './app.routes';
     AboutComponent,
     RecipesComponent,
     PythonComponent,
+    PythonDsComponent,
     ThumbNailCardsComponent,
     DetailedCardComponent,
     ThumbNailImageCardsComponent,

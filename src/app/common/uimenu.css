@@ -20,7 +20,17 @@ a:hover{color:#1e70bf;text-decoration:none;}
     color:red
 }
 .ui.menu a.item:active{background:rgba(0,0,0,.03);color:rgba(0,0,0,.95);}
-.ui.vertical.menu{display:block;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;background:#fff;-webkit-box-shadow:0 1px 2px 0 rgba(34,36,38,.15);box-shadow:0 1px 2px 0 rgba(34,36,38,.15);}
+.ui.vertical.menu{
+    display:block;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    background:#fff;
+    -webkit-box-shadow:0 1px 2px 0 rgba(34,36,38,.15);
+    box-shadow:0 1px 2px 0 rgba(34,36,38,.15);
+    overflow-y: auto;
+}
 .ui.vertical.menu .item{display:block;background:0 0;border-top:none;border-right:none;}
 .ui.vertical.menu>.item:first-child{border-radius:.28571429rem .28571429rem 0 0;}
 .ui.vertical.menu>.item:last-child{border-radius:0 0 .28571429rem .28571429rem;}
