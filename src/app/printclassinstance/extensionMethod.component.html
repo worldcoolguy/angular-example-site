@@ -6,6 +6,9 @@
         </div>
     </div>
     <div class="uicontent">
+        <div class="ui image">
+                <img style="width: 290px;" src="{{extMethod.ploturl}}">
+        </div>         
         <div class="uidescription" *ngFor="let s of extMethod.samples">
             <extensionMethodSample [methodSample]="s"></extensionMethodSample>
         </div>

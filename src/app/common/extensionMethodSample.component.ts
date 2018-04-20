@@ -6,6 +6,15 @@ import {Component,Input,OnInit} from '@angular/core'
 })
 
 export class ExtensionMethodSampleComponent implements OnInit{
-    @Input() methodSample:any;    
+    config:{};
+    @Input() methodSample:any;   
+    
+    constructor() {
+        this.config={ 
+            lineNumbers: true, 
+            mode: 'python',
+            theme:'mdn-like'
+        };
+    }
     ngOnInit(){}
 }
