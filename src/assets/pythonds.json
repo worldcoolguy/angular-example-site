@@ -29,6 +29,14 @@
             "title": "",
             "code":"def test_tree_get_node():\n    t=Tree()\n\n    # Add a parent node\n    n=NodeInfo(\"Html\",None,NodeType.ROOT)\n    t.add_node(n,None)\n\n    # Add a child node\n    cn=NodeInfo(\"head\",None,None)\n    t.add_node(cn,n)\n\n    node=t.get_node(\"head\")"
         }]
+    },
+    {
+        "methodName": "height",
+        "description": "gets tree's height.",
+        "samples": [{
+            "title": "",
+            "code":"def test_tree_get_node():\n    t=Tree()\n\n    # Add a parent node\n    n=NodeInfo(\"Html\",None,NodeType.ROOT)\n    t.add_node(n,None)\n\n    # Add a child node\n    cn=NodeInfo(\"head\",None,None)\n    t.add_node(cn,n)\n\n    height=t.height # 1"
+        }]
     }
 ]
 }
