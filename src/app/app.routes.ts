@@ -18,7 +18,8 @@ export const routes: Routes = [
   { path: 'python', component: PythonComponent },
   { path: 'pythonds', component: PythonDsComponent },
   { path: 'detailedcard/:id', component: DetailedCardComponent },
-  { path: 'detailedimagecard/:id/:key', component: DetailedImageCardComponent },
+  { path: 'detailedimagecard/:id/:key', component: DetailedImageCardComponent },  
+  { path: 'site', redirectTo: '/home/nuget', pathMatch: 'prefix' },  
   { path: '', redirectTo: '/home/nuget', pathMatch: 'full' },
 ];
 
