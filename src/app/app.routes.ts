@@ -19,8 +19,9 @@ export const routes: Routes = [
   { path: 'pythonds', component: PythonDsComponent },
   { path: 'detailedcard/:id', component: DetailedCardComponent },
   { path: 'detailedimagecard/:id/:key', component: DetailedImageCardComponent },  
-  { path: 'site', redirectTo: '/home/nuget', pathMatch: 'prefix' },  
-  { path: '', redirectTo: '/home/nuget', pathMatch: 'full' },
+  { path: 'site/home', redirectTo: '/pythonds', pathMatch: 'full' },  
+  { path: 'site', redirectTo: '/pythonds', pathMatch: 'full' },  
+  { path: '', redirectTo: '/pythonds', pathMatch: 'full' },
 ];
 
 export const Routing: ModuleWithProviders = RouterModule.forRoot(routes);
