@@ -21,6 +21,7 @@ export const routes: Routes = [
   { path: 'detailedimagecard/:id/:key', component: DetailedImageCardComponent },  
   { path: 'site/home', redirectTo: '/pythonds', pathMatch: 'full' },  
   { path: 'site', redirectTo: '/pythonds', pathMatch: 'full' },  
+  { path: 'site/', redirectTo: '/pythonds', pathMatch: 'full' },  
   { path: '', redirectTo: '/pythonds', pathMatch: 'full' },
 ];
 

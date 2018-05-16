@@ -1,0 +1,13 @@
+{
+"title":"VS Code Extensions",
+"hideList":true,
+"data":[
+    {
+        "methodName": "Python Coding Conventions",
+        "description": "Apply python coding conventions",
+        "ploturl":"https://res.cloudinary.com/harip/image/upload/v1526440387/general/oN0nK1cQJw.gif",
+        "samples": [],
+        "plotSize":"500px"
+    }
+]
+}

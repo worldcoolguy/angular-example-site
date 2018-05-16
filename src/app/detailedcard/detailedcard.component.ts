@@ -13,6 +13,7 @@ export class DetailedCardComponent implements OnInit {
     packageData: any;
     methodNames:any[];
     showhideSourceLink:any;
+    size:any;
 
     constructor(
         private _packageDataService: PackageDataService,
@@ -28,6 +29,7 @@ export class DetailedCardComponent implements OnInit {
                 this.packageData = returnData
                 this.methodNames=returnData.data.map((d:any)=> d.methodName);
                 this.showhideSourceLink=this.packageData.gitLink ? true : false;
+                this.size=this.packageData.plotSize ? this.packageData.plotSize : "290px"
             })
             .catch((err) => {
                 console.log(err); // dont do this, show the user a nice message
