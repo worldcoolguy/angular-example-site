@@ -28,8 +28,7 @@ export class DetailedCardComponent implements OnInit {
             .then((returnData) => {
                 this.packageData = returnData
                 this.methodNames=returnData.data.map((d:any)=> d.methodName);
-                this.showhideSourceLink=this.packageData.gitLink ? true : false;
-                this.size=this.packageData.plotSize ? this.packageData.plotSize : "290px"
+                this.showhideSourceLink=this.packageData.gitLink ? true : false;  
             })
             .catch((err) => {
                 console.log(err); // dont do this, show the user a nice message

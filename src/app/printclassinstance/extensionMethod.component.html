@@ -1,6 +1,11 @@
 <div class="ui card" id="{{extMethod.methodName}}">
     <div class="uicontent">
-        <div class="uiheader">{{extMethod.methodName}}</div>
+        <div class="uiheader">{{extMethod.methodName}}
+            <span class="right floated">
+                <a class="uisummary" href="{{extMethod.gitLink}}"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a>
+                <a class="uisummary" href="{{extMethod.extensionLink}}"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a>
+            </span>
+        </div>
         <div class="uimeta">
             {{extMethod.description}}
         </div>
