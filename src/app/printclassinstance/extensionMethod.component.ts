@@ -10,5 +10,10 @@ import {ExtensionMethodSampleComponent} from '../common/extensionMethodSample.co
 export class ExtensionMethodComponent implements OnInit{
     @Input() extMethod:any;    
     @Input() size:any;
-    ngOnInit(){}
+    showSourceLink:any;
+    showExtensionLink:any;
+    ngOnInit(){
+        this.showSourceLink= this.extMethod.gitLink ? false : true;
+        this.showExtensionLink= this.extMethod.extensionLink ? false : true;
+    }
 }

@@ -1,10 +1,6 @@
 <div class="ui card" id="{{extMethod.methodName}}">
     <div class="uicontent">
         <div class="uiheader">{{extMethod.methodName}}
-            <span class="right floated">
-                <a class="uisummary" href="{{extMethod.gitLink}}"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a>
-                <a class="uisummary" href="{{extMethod.extensionLink}}"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a>
-            </span>
         </div>
         <div class="uimeta">
             {{extMethod.description}}
@@ -22,6 +18,18 @@
         <span class="right floated">
             <a pageScroll class="uisummary" href="#main"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a>
         </span>
+        <span class="left floated">
+                <a class="uisummary"
+                   [hidden]="showSourceLink" 
+                   href="{{extMethod.gitLink}}">
+                   <i class="fab fa-git-square fa-2x"></i>
+                </a>
+                <a class="uisummary" 
+                    [hidden]="showExtensionLink" 
+                    href="{{extMethod.extensionLink}}"> 
+                    <img src="{{extMethod.imageLink}}" height="20px;"> 
+                </a>
+            </span>        
     </div>
 </div>
 <br/>
