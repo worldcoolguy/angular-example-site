@@ -6,6 +6,15 @@
 "hideList":false,
 "data":[
     {
+        "methodName": "export_tree_tocsv",
+        "description": "export data to a csv file",
+        "ploturl":"https://res.cloudinary.com/harip/image/upload/v1527336616/export_to_csv.png",
+        "samples": [{
+            "title": "",
+            "code":"def test_tree_plot():\n    t = Tree()\n\n    # Add a parent node\n    n = NodeInfo(\"Html\",None,NodeType.ROOT) \n    t.add_node(n,None)\n\n    # Add a child node\n    cn = NodeInfo(\"head\",None,None) \n    t.add_node(cn,n)\n\n    # Add a child node\n    cn1=NodeInfo(\"meta\",None,None) \n    t.add_node(cn1,cn)    \n\n    cn2=NodeInfo(\"meta\",None,None) \n    t.add_node(cn2,cn)    \n\n    cn3=NodeInfo(\"meta\",None,None) \n    t.add_node(cn3,cn)   \n\n    cn4=NodeInfo(\"meta\",None,None) \n    t.add_node(cn4,cn)   \n     \n\n    cn6=NodeInfo(\"script\",None,None) \n    t.add_node(cn6,cn)   \n\n    cn7=NodeInfo(\"style\",None,None) \n    t.add_node(cn7,cn) \n\n    cn8=NodeInfo(\"body\",None,None) \n    t.add_node(cn8,n)   \n  \n    cn5=NodeInfo(\"title\",\"google.com\",None) \n    t.add_node(cn5,cn) \n\n    cn10=NodeInfo(\"<p>\",None,None) \n    t.add_node(cn10,cn5)  \n    cn11=NodeInfo(\"<p>\",None,None) \n    t.add_node(cn11,cn5)  \n\n    cn12=NodeInfo(\"<p>\",None,None) \n    t.add_node(cn12,cn8)  \n\n    t.export_tree_tocsv(\"test.csv\")"
+        }]
+    },
+    {
         "methodName": "plot_tree",
         "description": "draws a plot of the data structure",
         "ploturl":"https://res.cloudinary.com/harip/image/upload/v1527335948/plot_tree.png",
